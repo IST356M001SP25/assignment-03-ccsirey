@@ -23,3 +23,4 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+I think I still find the order of Streamlit to be tricky, and it gets even more complicated when things need to be initialized. For example, in process_files.py, I originally had summary = st.info() followed by my blurb about the number of packages written to the file. I didn’t realize this was wrong and wasn’t sure what the problem was for a while. Then I realized I needed to iterate over every instance in the list and print them that way. While this involves initializing a session, the specific problem also came down to a simple logic issue in Python, which I’d say I’m still developing. It was definitely a good start to reuse some of the code from the last assignment. Not only did it make this assignment easier, but it also helped me reinforce what I learned from the previous task, in case I had started to forget.
